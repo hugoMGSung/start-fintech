@@ -1,4 +1,126 @@
-## 핀테크 파이썬
+# 핀테크 파이썬
+
+## 학습목표
+- Python의 기초 문법과 데이터 구조 익히기 (list, dict, function 등)
+- Pandas로 Excel 기반 재무 데이터 읽기 및 분석
+- matplotlib/seaborn을 활용한 시각화
+
+## 실습과제
+- 기업 재무제표(매출, 영업이익, 순이익) 엑셀 파일 불러오기
+- 분기별 매출 증감율 분석 및 시각화
+- 간단한 자동 리포트 템플릿 출력
+
+
+### Python 기초 + 재무 데이터 프로그래밍 입문
+- 핀테크 프로그래밍의 기반이 되는 Python 문법과 데이터 분석 기초를 학습합니다.  
+- 재무제표 데이터를 불러오고, 가공하고, 분석하는 준비 단계를 실습 중심으로 진행합니다.
+
+### 🎯 학습 목표
+- Python 언어의 핵심 문법(변수, 리스트, 딕셔너리, 함수 등) 이해
+- 사용자 입력을 기반으로 한 간단한 수치 계산 및 출력 작성
+- Pandas 라이브러리를 활용해 Excel 파일 읽기 및 기초 분석 시작
+- 엑셀 기반 재무제표 데이터를 다룰 수 있는 프로그래밍 기반 마련
+
+### 파이썬 언어 핵심 문법
+
+#### 변수선언과 기본 자료형
+```python
+x = 10         # 정수
+y = 3.14       # 실수
+name = "Hugo"  # 문자열
+is_ok = True   # 불리언
+```
+
+#### 자료형 확인
+- 다양한 변수에 값 넣고 type() 함수로 자료형 확인
+- 문자열 포맷팅: f"{변수}", str(), int() 확인
+
+#### 흐름제어
+##### if
+```python
+score = 85
+if score >= 90:
+    print("A등급")
+elif score >= 80:
+    print("B등급")
+else:
+    print("C등급 이하")
+
+```
+
+##### for, while
+```python
+for i in range(5):
+    print(f'반복 {i}')
+
+n = 0
+while n < 5:
+    print(n)
+    n += 1
+```
+
+- 구구단, 홀/짝수 판단기 만들기
+
+##### 컬렉션
+```python
+fruits = ['apple', 'banana', 'cherry']
+print(fruits[1])  # 'banana'
+
+user = {'name': 'Hugo', 'age': 25}
+print(user['name'])  # 'Hugo'
+
+t = (1, 2, 3)  # 수정 불가
+s = set([1, 1, 2, 3])  # 중복 제거
+```
+
+##### 함수 정의와 호출
+```python
+def add(x, y):
+    return x + y
+
+print(add(3, 5))
+
+
+def greet(name='익명'):
+    print(f"안녕하세요, {name}님")
+
+greet("Hugo")
+greet()
+```
+
+##### 객체지향 
+```python
+class Account:
+    def __init__(self, name, balance):
+        self.name = name
+        self.balance = balance
+
+    def show(self):
+        print(f'{self.name}님의 잔액은 {self.balance:,}원입니다.')
+
+acc = Account('Hugo', 500000)
+acc.show()
+
+```
+- self, __init__, obj.method() 호출방식
+
+##### 패키지와 외부라이브러리
+```python
+import math
+print(math.sqrt(16))  # 4.0
+
+import datetime
+print(datetime.datetime.now())
+```
+
+```bash
+pip install pandas
+pip install openpyxl
+```
+
+### 거래이익 계산기 프로그램 
+
+#### 
 
 ### 기존 강의 링크로 대체(일단)
 [링크](https://github.com/hugoMGSung/basic-python-2024)

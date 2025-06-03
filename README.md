@@ -74,4 +74,8 @@ Financial Technology 핀테크 학습 리포지토리
 4. 금융 챗봇 - 비정상 거래 탐지, 이상알림
     - FAQ 자동응답 + 잔액조회 시뮬레이션
 
-- [링크](https://github.com/hugoMGSung/start-fintech/tree/main/fintech01_python) 
+
+## 뉴 커리큘럼
+
+### 1~2주차: Python + 재무/회계 기초
+- [링크](./fintech01_python/README.md) 
