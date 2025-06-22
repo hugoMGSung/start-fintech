@@ -79,3 +79,5 @@ Financial Technology 핀테크 학습 리포지토리
 
 ### 1~2주차: Python + 재무/회계 기초
 - [링크](./fintech01_python/README.md) 
+
+### 
